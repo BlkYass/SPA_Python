@@ -24,5 +24,15 @@ $ flask run
 
 ## Requirements
 
-This project was developed using [**Python 3.6.5**](https://docs.python.org/3/) (however any version of Python 3 *should* work) and [Pipenv](https://docs.pipenv.org/). The only required packages are [Flask](http://flask.pocoo.org/) and [Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/).
+This project was developed using [**Python 3.6.5**](https://docs.python.org/3/) (
+and [Pipenv](https://docs.pipenv.org/).
+required packages are [Flask](http://flask.pocoo.org/)
+[Flask-SQLAlchemy](http://flask-sqlalchemy.pocoo.org/)
+flask-wtf
+flask-login
+flask-bootstrap
+bcrypt
+flask-bcrypt
+sqlalchemy
+requests
 
