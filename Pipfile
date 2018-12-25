@@ -11,6 +11,10 @@ requests = "*"
 flask-sqlalchemy = "*"
 flask-wtf = "*"
 flask-login = "*"
+flask-bootstrap = "*"
+bcrypt = "*"
+sqlalchemy = "*"
+flask-bcrypt = "*"
 
 [requires]
 python_version = "3.6"
