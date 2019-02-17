@@ -11,7 +11,7 @@ class RegistrationForm(FlaskForm):
     confirm_password = PasswordField('Confirm Password',
                                      validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Sign Up')
-    #function to check if email 
+    #function to check if email already exist 
     def validate_email(self, email):
         user = User.query.filter_by(email=email.data).first()
         if user:
