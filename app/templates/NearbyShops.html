@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<html>
+<body>
+<div class="container-fluid">
+    <div class="row">
+       
+            
+                 {% for name in image_name %}
+                        <div class="col-lg-4">
+                            <div class="col-lg-12">
+            
+                                <div class="caption">{{name.replace(".jpeg","").replace("_"," ")}}</div>
+                                <img src="static/photos/{{name}}" class="img-thumbnail"/>
+                                <button type="button" class="btn btn-primary btn-sm">Like</button>
+                                <button type="button" class="btn btn-danger btn-sm">Dislike</button>
+                        
+                            </div>
+                    </div> 
+              
+                {% endfor %}
+        
+    </div>
+</div>
+</body>
+</html>
+{% endblock content %}
