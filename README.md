@@ -19,6 +19,7 @@ install Python 3.6.5
 install pipenv using pip install pipenv
 update pip 18.1
 google places api key https://developers.google.com/places/web-service/get-api-key
+
 ## Quickstart
 
 ```bash
@@ -39,7 +40,7 @@ $ flask run
 ## Content of the application
 
 The directory structure should look as follows:
-
+```bash
 .SPA_Python            # root directory 
 ├── app                  # package that host the application
 |     ├── static #css and javascript
@@ -63,7 +64,9 @@ The directory structure should look as follows:
 ├── run.py            # main module to run the application
 ├── README.md           #
 
+```
 
+```bash
 -pipfile contains installed packages:
 flask 
  lightweight WSGI web application framework
@@ -85,7 +88,7 @@ password hashing for flask
 
 -pipfile.lock 
 contains The details of the environment (all installed packages with pinned versions and other details) This file was automatically generated and will be automatically updated upon installing new packages and should not be modified by the user.
-
+```
 
 
 
