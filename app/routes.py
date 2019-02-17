@@ -75,7 +75,7 @@ def NearbyShops():
     final_url = nearby_search_url + urllib.parse.urlencode({'location':loc,
                                                             'radius':'2500',
                                                             'type':'restaurant',
-                                                            'key':'AIzaSyBSb_FEkrkczt1ZV0aEHwZ_vzMtGgWFCDM'})
+                                                            'key':''})
     places_req = requests.get(final_url)
     places_req.text
     results = json.loads(places_req.text)
@@ -96,7 +96,7 @@ def NearbyShops():
     for ref in list_photo_reference:
         photo_final_url = photos_url + urllib.parse.urlencode({'maxwidth' :'500', 
                                                                'photoreference' :ref,
-                                                               'key':'AIzaSyBSb_FEkrkczt1ZV0aEHwZ_vzMtGgWFCDM'})
+                                                               'key':''})
         photos_req = requests.get(photo_final_url)
         list_requests.append(photos_req.content)
     
