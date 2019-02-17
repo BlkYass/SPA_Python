@@ -14,12 +14,12 @@ While lightweight and easy to use, Flask’s built-in server is not suitable for
 The application will use a SQLite database to store users and preffered place. Python comes with built-in support for SQLite in the sqlite3 module.SQLite is convenient because it doesn’t require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time,they will slow down as each write happens sequentially. Small applications won’t notice this. Once the app become big, we may want to switch to a different database.
 
 ## Requirements
-
+```bash
 install Python 3.6.5
 install pipenv using pip install pipenv
 update pip 18.1
 google places api key https://developers.google.com/places/web-service/get-api-key
-
+```
 ## Quickstart
 
 ```bash
@@ -87,7 +87,8 @@ password hashing for flask
  geocoder Simple and consistent geocoding library written in Python
 
 -pipfile.lock 
-contains The details of the environment (all installed packages with pinned versions and other details) This file was automatically generated and will be automatically updated upon installing new packages and should not be modified by the user.
+contains The details of the environment (all installed packages with pinned versions and other details) 
+This file was automatically generated and will be automatically updated upon installing new packages and should not be modified by the user.
 ```
 
 
