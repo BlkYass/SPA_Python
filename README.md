@@ -45,24 +45,24 @@ The directory structure should look as follows:
 ├── app                  # package that host the application
 |     ├── static #css and javascript
 |     |          ├── main.css
-|     |          ├── 
-|     |          ├── 
-|     |          ├──
+|     |          ├── sample_photos
+|     |          ├── Phptos
+|     |          ├──localization-icon.png
 |     ├── templates    # views
-|     |          ├── index.html              #
-|     |          ├── login.html              #
-|     |          ├── register.html           #
-|     |          ├── nesrbyshops.html        # 
-|     |          ├── preferredpace.html      #
+|     |          ├── index.html              #entry page  
+|     |          ├── login.html              #page for user to login
+|     |          ├── register.html           #page for user to register
+|     |          ├── NearbyShops.html        #page to display shops near user lication
+|     |          ├── pref_Shops.html         #page to dispkay like places
 |     ├──Places.db    #database file
-|     ├──__init__.py  #
-|     ├──forms.py     #
-|     ├──models.py    #
-|     ├──routes.py    #
-├── pipfile             # 
+|     ├──__init__.py  #module to configure and intialize the flask application
+|     ├──forms.py     #module for form models for login and registration
+|     ├──models.py    #module for database classes
+|     ├──routes.py    #module for handling views 
+├── pipfile             # file with dependencies and flask extention
 ├── pipfile.lock        #
-├── run.py            # main module to run the application
-├── README.md           #
+├── run.py              # main module to run the application
+├── README.md           #Information about the app
 
 ```
 
