@@ -35,7 +35,7 @@ $ set FLASK_APP=run.py
 $ # Run the Flask application on Mac/linux
 $ import FLASK_APP=run.py
 $ flask run
-
+```
 ## Content of the application
 
 The directory structure should look as follows:
