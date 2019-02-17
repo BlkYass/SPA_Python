@@ -15,6 +15,9 @@ flask-bootstrap = "*"
 bcrypt = "*"
 sqlalchemy = "*"
 flask-bcrypt = "*"
+geocoder = "*"
+stringio = "*"
+urllib = "*"
 
 [requires]
 python_version = "3.6"
