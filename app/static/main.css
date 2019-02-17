@@ -2,16 +2,18 @@ body {
     background: #fafafa;
     color: #333333;
     margin-top: 5rem;
+    font-family: cursive;
   }
-  
+  .img-thumbnail{
+    max-width:250px;
+    height: auto;
+  }
   h1, h2, h3, h4, h5, h6 {
     color: #444444;
   }
-  
-  .bg-steel {
-    background-color: #5f788a;
-  }
-  
+  .col-lg-12 {
+    margin-bottom: 52px;
+}
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
@@ -22,6 +24,8 @@ body {
   
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
+    font-size: 1.45em;
+    
   }
   
   .content-section {
