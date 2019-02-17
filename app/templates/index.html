@@ -1,4 +1,23 @@
 {% extends "layout.html" %}
 {% block content %}
-    
+<div class="jumbotron">
+<h2>Register then Login in order to view 
+     a list of nearby shops
+</div>
+</h2>
+<div class="container">
+    <div class="row">
+        {% for name in sample_image_name %}              
+                <div class="col-lg-4">
+                  
+                    
+                        
+                    <img src="static/sample_photos/{{name}}" class="img-thumbnail"/>
+                        
+                    
+                    
+                </div>     
+        {% endfor %}
+    </div>
+</div>
 {% endblock content %}
