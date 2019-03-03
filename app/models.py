@@ -1,8 +1,9 @@
 # Module for database models importing necessary modules
 from app import db, login_manager  
 from datetime import datetime
-from flask_login import UserMixin
+from flask_login import UserMixin #The Flask-Login extension works with the application's user mode
 
+#configure a user loader function, that can be called to load a user given the ID
 @login_manager.user_loader
 def load_user(user_id):
     return User.query.get(int(user_id))
