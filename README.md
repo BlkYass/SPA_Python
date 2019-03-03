@@ -1,17 +1,21 @@
 # Introduction
 
-The coding challenge is about implementing an app that lists shops nearby the location of the user.
+implementing an app that lists shops nearby the location of the user.this application is still under devlopement.
+
 tools used:
 visual studio code 
 git bach
 
-I will be using Flask whish is a lightweight Python framework for web applications 
+I will be using Flask a lightweight Python framework for web applications.
 
-From the documentation:
-Flask aims to keep the core simple but extensible. Flask won’t make many decisions for you, such as what database to use. Those decisions that it does make, such as what templating engine to use,are easy to change. Everything else is up to you, so that Flask can be everything you need and nothing you don’t.
-Flask provides the basics for URL routing and page rendering also it doesn't directly provide features like form validation, database abstraction, authentication, and so on. Such features are instead provided by special Python packages called Flask extensions like flask-sqlalchemy.
-While lightweight and easy to use, Flask’s built-in server is not suitable for production as it doesn’t scale well. Some of the options available for properly running Flask in production are documented here http://flask.pocoo.org/docs/1.0/deploying/#deployment
-The application will use a SQLite database to store users and preffered place. Python comes with built-in support for SQLite in the sqlite3 module.SQLite is convenient because it doesn’t require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time,they will slow down as each write happens sequentially. Small applications won’t notice this. Once the app become big, we may want to switch to a different database.
+Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's BSD licensed! http://flask.pocoo.org/
+
+Flask provides the basics for URL routing and page rendering also it doesn't directly provide features like form validation, database abstraction, authentication, and so on. Such features are instead provided by special Python packages called Flask extensions like flask-sqlalchemy Flask-Login descripton of used extensions can be found bellow. 
+
+Python comes with built-in support for SQLite.SQLite is convenient because it doesn’t require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time,they will slow down as each write happens sequentially. Small applications won’t notice this. Once the app become big switching to a different database like mysql will more conviniant.
+While lightweight and easy to use, Flask’s built-in server is not suitable for production as it doesn’t scale well. Some of the options available for properly running Flask in production are documented here http://flask.pocoo.org/docs/1.0/deploying/#deployment.
+
+I am using a google place api key. please make sure to have a valid google api key to make request and restricted to your IP adresse or use one without restriction.
 
 ## Requirements
 ```bash
@@ -48,7 +52,7 @@ The directory structure should look as follows:
 |     |          ├── sample_photos
 |     |          ├── Phptos
 |     |          ├──localization-icon.png
-|     ├── templates    # views
+|     ├── templates    # views directory
 |     |          ├── index.html              #entry page  
 |     |          ├── login.html              #page for user to login
 |     |          ├── register.html           #page for user to register
@@ -65,6 +69,7 @@ The directory structure should look as follows:
 ├── README.md           #Information about the app
 
 ```
+## Description of used packages,Modules and flask extensions 
 
 ```bash
 -pipfile contains installed packages:
