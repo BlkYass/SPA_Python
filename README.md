@@ -15,7 +15,7 @@ Flask provides the basics for URL routing and page rendering also it doesn't dir
 Python comes with built-in support for SQLite.SQLite is convenient because it doesn’t require setting up a separate database server and is built-in to Python. However, if concurrent requests try to write to the database at the same time,they will slow down as each write happens sequentially. Small applications won’t notice this. Once the app become big switching to a different database like mysql will more conviniant.
 While lightweight and easy to use, Flask’s built-in server is not suitable for production as it doesn’t scale well. Some of the options available for properly running Flask in production are documented here http://flask.pocoo.org/docs/1.0/deploying/#deployment.
 
-I am using a google place api key. please make sure to have a valid google api key to make request and restricted to your IP adresse or use one without restriction.
+I am using a google place api key. please make sure to have a valid google api key, either restrict it to your IP adresse or use it without restriction.place the api key in line 73 and 100 in the urllib.parse.urlencode function where the key paramater has no value in the routes.py module.
 
 ## Requirements
 ```bash
@@ -23,6 +23,8 @@ install Python 3.6.5
 install pipenv using pip install pipenv
 update pip 18.1
 google places api key https://developers.google.com/places/web-service/get-api-key
+
+
 ```
 ## Quickstart
 
