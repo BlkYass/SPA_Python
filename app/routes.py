@@ -68,9 +68,9 @@ def NearbyShops():
     
     #combine the neaby search url with parameters using urllib.parse.urlencode functioin to convert to text
     final_url = nearby_search_url + urllib.parse.urlencode({'location':loc,
-                                                            'radius':'2500',
-                                                            'type':'restaurant',
-                                                            'key':''})
+                                                            'radius':'1500',
+                                                            'type':'restaurant,beauty_salon,pet_store,car_wash,cafe,home_goods_store,veterinary_care,supermarket,store',
+                                                            'key':'AIzaSyD_bvbG9mgu59qr31u4YA2b2TYoIh76ovc'})
     #making the request to the places api
     places_req = requests.get(final_url)
     
@@ -97,7 +97,7 @@ def NearbyShops():
     for ref in list_photo_reference:
         photo_final_url = photos_url + urllib.parse.urlencode({'maxwidth' :'500', 
                                                                'photoreference' :ref,
-                                                               'key':''})                                                     
+                                                               'key':'AIzaSyD_bvbG9mgu59qr31u4YA2b2TYoIh76ovc'})                                                     
         photos_req = requests.get(photo_final_url)
         list_response_photo.append(photos_req.content)
     
