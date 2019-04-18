@@ -19,6 +19,7 @@ itsdangerous==1.1.0
 Jinja2==2.10.1
 MarkupSafe==1.1.1
 pipenv==2018.11.26
+psycopg2==2.8.2
 pycparser==2.19
 ratelim==0.1.6
 requests==2.21.0
