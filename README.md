@@ -21,13 +21,13 @@ The directory structure should look as follows:
 |     ├── static #css and javascript
 |     |          ├── main.css
 |     |          ├── sample_photos
-|     |          ├── Phptos
+|     |          ├── Photos
 |     |          ├──localization-icon.png
 |     ├── templates    # views directory
 |     |          ├── index.html              #entry page  
 |     |          ├── login.html              #page for user to login
 |     |          ├── register.html           #page for user to register
-|     |          ├── NearbyShops.html        #page to display shops near user lication
+|     |          ├── NearbyShops.html        #page to display shops near user location
 |     |          ├── pref_Shops.html         #page to dispkay like places
 |     ├──Places.db    #database file
 |     ├──__init__.py  #module to configure and intialize the flask application
